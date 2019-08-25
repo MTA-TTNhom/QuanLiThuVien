@@ -122,6 +122,16 @@ namespace QuanLyThuVienHVKTQS
             socmtndtxt.Text = "";
             quyenhantxt.Text = "";
             this.Them_bool = true;
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
         }
 
 
@@ -179,11 +189,61 @@ namespace QuanLyThuVienHVKTQS
                     MessageBox.Show("Sửa lỗi!");
             }
             btn_edit(false);
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
         }
 
         private void BoquaNV_Click(object sender, EventArgs e)
         {
             btn_edit(false);
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
+        }
+
+        private void anhmoinvbtn_Click(object sender, EventArgs e)
+        {
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
+
         }
     }
 }

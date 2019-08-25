@@ -206,6 +206,7 @@
             this.anhmoinvbtn.TabIndex = 28;
             this.anhmoinvbtn.Text = "ảnh mới";
             this.anhmoinvbtn.UseVisualStyleBackColor = true;
+            this.anhmoinvbtn.Click += new System.EventHandler(this.anhmoinvbtn_Click);
             // 
             // anhnv_picture
             // 
