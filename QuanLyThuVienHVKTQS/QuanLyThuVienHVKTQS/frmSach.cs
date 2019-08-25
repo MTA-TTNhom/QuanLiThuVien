@@ -134,12 +134,7 @@ namespace QuanLyThuVienHVKTQS
             btnThoat.Enabled = !t;
             Them_bool = false;
             Sua_bool = false;
-            txtNamXB.Text = l[index].namxb.ToString();
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
+  
         }
         private void btnThoat_Click(object sender, EventArgs e)
         {
