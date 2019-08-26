@@ -20,22 +20,50 @@ namespace QuanLyThuVienHVKTQS
         public frmUser()
         {
             InitializeComponent();
-       
+            HienThi_User();
         }
         public void btn_enable(bool t)
         {
-           
+
         }
         public void HienThi_User()
         {
-            
-         
-            btn_enable(false);
+
         }
 
         public void ListView_User_SelectedIndexChanged(object sender, EventArgs e)
         {
+
         }
-     
+
+        private void Sua_userbtn_Click(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void xoa_userbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void luu_userbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boqua_userbtn_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void thoat_userbtn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void search_usertxt_TextChanged(object sender, EventArgs e)
+        {
+          
     }
 }

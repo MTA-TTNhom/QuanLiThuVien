@@ -163,7 +163,228 @@
             this.listView_User.UseCompatibleStateImageBehavior = false;
             this.listView_User.View = System.Windows.Forms.View.Details;
             this.listView_User.SelectedIndexChanged += new System.EventHandler(this.ListView_User_SelectedIndexChanged);
-         
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "STT";
+            this.columnHeader1.Width = 33;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "ID";
+            this.columnHeader2.Width = 39;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "UserName";
+            this.columnHeader3.Width = 73;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Password";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "IsAdmin";
+            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // groupuser
+            // 
+            this.groupuser.Controls.Add(this.IDtxt);
+            this.groupuser.Controls.Add(this.label4);
+            this.groupuser.Controls.Add(this.isadmincbx);
+            this.groupuser.Controls.Add(this.passwordtxt);
+            this.groupuser.Controls.Add(this.usernametxt);
+            this.groupuser.Controls.Add(this.label3);
+            this.groupuser.Controls.Add(this.label2);
+            this.groupuser.Controls.Add(this.label1);
+            this.groupuser.Location = new System.Drawing.Point(285, 75);
+            this.groupuser.Name = "groupuser";
+            this.groupuser.Size = new System.Drawing.Size(294, 158);
+            this.groupuser.TabIndex = 3;
+            this.groupuser.TabStop = false;
+            // 
+            // IDtxt
+            // 
+            this.IDtxt.Location = new System.Drawing.Point(98, 19);
+            this.IDtxt.Name = "IDtxt";
+            this.IDtxt.Size = new System.Drawing.Size(117, 20);
+            this.IDtxt.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(35, 26);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(18, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "ID";
+            // 
+            // isadmincbx
+            // 
+            this.isadmincbx.FormattingEnabled = true;
+            this.isadmincbx.Items.AddRange(new object[] {
+            "True",
+            "False"});
+            this.isadmincbx.Location = new System.Drawing.Point(98, 125);
+            this.isadmincbx.Name = "isadmincbx";
+            this.isadmincbx.Size = new System.Drawing.Size(72, 21);
+            this.isadmincbx.TabIndex = 5;
+            // 
+            // passwordtxt
+            // 
+            this.passwordtxt.Location = new System.Drawing.Point(98, 87);
+            this.passwordtxt.Name = "passwordtxt";
+            this.passwordtxt.Size = new System.Drawing.Size(117, 20);
+            this.passwordtxt.TabIndex = 4;
+            // 
+            // usernametxt
+            // 
+            this.usernametxt.Location = new System.Drawing.Point(98, 51);
+            this.usernametxt.Name = "usernametxt";
+            this.usernametxt.Size = new System.Drawing.Size(117, 20);
+            this.usernametxt.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(35, 133);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "IsAdmin";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(35, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Password";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(35, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "UserName";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.thoat_userbtn);
+            this.groupBox2.Controls.Add(this.boqua_userbtn);
+            this.groupBox2.Controls.Add(this.luu_userbtn);
+            this.groupBox2.Controls.Add(this.xoa_userbtn);
+            this.groupBox2.Controls.Add(this.Sua_userbtn);
+            this.groupBox2.Controls.Add(this.Them_userbtn);
+            this.groupBox2.Location = new System.Drawing.Point(285, 239);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(294, 55);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            // 
+            // thoat_userbtn
+            // 
+            this.thoat_userbtn.Location = new System.Drawing.Point(248, 19);
+            this.thoat_userbtn.Name = "thoat_userbtn";
+            this.thoat_userbtn.Size = new System.Drawing.Size(46, 21);
+            this.thoat_userbtn.TabIndex = 5;
+            this.thoat_userbtn.Text = "Thoát";
+            this.thoat_userbtn.UseVisualStyleBackColor = true;
+            this.thoat_userbtn.Click += new System.EventHandler(this.thoat_userbtn_Click);
+            // 
+            // boqua_userbtn
+            // 
+            this.boqua_userbtn.Location = new System.Drawing.Point(194, 19);
+            this.boqua_userbtn.Name = "boqua_userbtn";
+            this.boqua_userbtn.Size = new System.Drawing.Size(49, 21);
+            this.boqua_userbtn.TabIndex = 4;
+            this.boqua_userbtn.Text = "Bỏ qua";
+            this.boqua_userbtn.UseVisualStyleBackColor = true;
+            this.boqua_userbtn.Click += new System.EventHandler(this.boqua_userbtn_Click);
+            // 
+            // luu_userbtn
+            // 
+            this.luu_userbtn.Location = new System.Drawing.Point(146, 19);
+            this.luu_userbtn.Name = "luu_userbtn";
+            this.luu_userbtn.Size = new System.Drawing.Size(42, 21);
+            this.luu_userbtn.TabIndex = 3;
+            this.luu_userbtn.Text = "Lưu";
+            this.luu_userbtn.UseVisualStyleBackColor = true;
+            this.luu_userbtn.Click += new System.EventHandler(this.luu_userbtn_Click);
+            // 
+            // xoa_userbtn
+            // 
+            this.xoa_userbtn.Location = new System.Drawing.Point(98, 19);
+            this.xoa_userbtn.Name = "xoa_userbtn";
+            this.xoa_userbtn.Size = new System.Drawing.Size(42, 21);
+            this.xoa_userbtn.TabIndex = 2;
+            this.xoa_userbtn.Text = "Xóa";
+            this.xoa_userbtn.UseVisualStyleBackColor = true;
+            this.xoa_userbtn.Click += new System.EventHandler(this.xoa_userbtn_Click);
+            // 
+            // Sua_userbtn
+            // 
+            this.Sua_userbtn.Location = new System.Drawing.Point(48, 19);
+            this.Sua_userbtn.Name = "Sua_userbtn";
+            this.Sua_userbtn.Size = new System.Drawing.Size(42, 21);
+            this.Sua_userbtn.TabIndex = 1;
+            this.Sua_userbtn.Text = "Sửa";
+            this.Sua_userbtn.UseVisualStyleBackColor = true;
+            this.Sua_userbtn.Click += new System.EventHandler(this.Sua_userbtn_Click);
+            // 
+            // Them_userbtn
+            // 
+            this.Them_userbtn.Location = new System.Drawing.Point(0, 19);
+            this.Them_userbtn.Name = "Them_userbtn";
+            this.Them_userbtn.Size = new System.Drawing.Size(42, 21);
+            this.Them_userbtn.TabIndex = 0;
+            this.Them_userbtn.Text = "Thêm";
+            this.Them_userbtn.UseVisualStyleBackColor = true;
+            this.Them_userbtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(35, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Tìm kiếm";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.search_usertxt);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Location = new System.Drawing.Point(285, 27);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(294, 53);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            // 
+            // search_usertxt
+            // 
+            this.search_usertxt.Location = new System.Drawing.Point(98, 22);
+            this.search_usertxt.Name = "search_usertxt";
+            this.search_usertxt.Size = new System.Drawing.Size(117, 20);
+            this.search_usertxt.TabIndex = 6;
+            this.search_usertxt.TextChanged += new System.EventHandler(this.search_usertxt_TextChanged);
+            // 
+            // frmUser
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(584, 303);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupuser);
+            this.Controls.Add(this.listView_User);
+            this.Controls.Add(this.menuStrip1);
+            this.Name = "frmUser";
+            this.Text = "frmUser";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupuser.ResumeLayout(false);
