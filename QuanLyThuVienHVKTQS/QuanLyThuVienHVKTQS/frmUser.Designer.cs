@@ -178,7 +178,26 @@
 
         #endregion
 
-
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem quanLiHêThôngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đăngXuâtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem thoatChươngTrinhToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quanLiDanhMucToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem danhMucĐôcGiaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem danhMucNhânViênToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem danhMucNhaXuâtBanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quanLiSachToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýMượntrảSáchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ListView listView_User;
+        private System.Windows.Forms.GroupBox groupuser;
+        private System.Windows.Forms.ComboBox isadmincbx;
+        private System.Windows.Forms.TextBox passwordtxt;
+        private System.Windows.Forms.TextBox usernametxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
