@@ -50,5 +50,45 @@ namespace QuanLyThuVienHVKTQS.controller
                 return 0;
             }
         }
+        public bool Edit(User user)
+        {
+            var obj = db.Users.First(m => m.ID == user.ID);
+            if (obj != null)
+            {
+                try
+                {
+                    obj.UserName = user.UserName;
+                    obj.Password = user.Password;
+                    obj.IsAdmin = user.IsAdmin;
+
+                    db.SubmitChanges();
+                    return true;
+                }
+                catch (Exception)
+                {
+                    return false;
+                    throw;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool Delete(int id)
+        {
+            try
+            {
+                var obj = db.Users.First(m => m.ID == id);
+                db.Users.DeleteOnSubmit(obj);
+                db.SubmitChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
+        }
     }
 }
