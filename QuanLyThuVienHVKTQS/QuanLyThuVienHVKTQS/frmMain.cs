@@ -16,5 +16,15 @@ namespace QuanLyThuVienHVKTQS
         {
             InitializeComponent();
         }
+
+        private void dangnhapbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dangkybtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
