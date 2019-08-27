@@ -58,5 +58,20 @@ namespace QuanLyThuVienHVKTQS.controller
             }
             return true;
         }
+        public bool Del(int masach)
+        {
+            try
+            {
+                var result = db.saches.First(m => m.masach == masach);
+                db.saches.DeleteOnSubmit(result);
+                db.SubmitChanges();
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
+            return true;
+        }
     }
 }
