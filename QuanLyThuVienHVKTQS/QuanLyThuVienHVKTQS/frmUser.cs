@@ -14,8 +14,8 @@ namespace QuanLyThuVienHVKTQS
 {
     public partial class frmUser : Form
     {
-        private bool Them_bool=false;
-        private bool Sua_bool=false;
+        private bool Them_bool = false;
+        private bool Sua_bool = false;
         List<User> l = null;
         public frmUser()
         {
@@ -34,7 +34,7 @@ namespace QuanLyThuVienHVKTQS
         }
         public void HienThi_User()
         {
-            
+
             var user = new UserController();
             l = user.Detail();
             listView_User.Items.Clear();
@@ -57,7 +57,7 @@ namespace QuanLyThuVienHVKTQS
         {
             if (listView_User.SelectedItems.Count == 0) return;
             int id = Convert.ToInt32(listView_User.SelectedItems[0].SubItems[1].Text);
-            int index = l.FindIndex(m=>m.ID==id);
+            int index = l.FindIndex(m => m.ID == id);
 
             IDtxt.Text = l[index].ID.ToString();
             usernametxt.Text = l[index].UserName.ToString();
@@ -72,13 +72,13 @@ namespace QuanLyThuVienHVKTQS
             passwordtxt.Text = "";
             isadmincbx.Text = "false";
             Them_bool = true;
-            
+
         }
 
         private void Sua_userbtn_Click(object sender, EventArgs e)
         {
 
-            
+
         }
 
         private void xoa_userbtn_Click(object sender, EventArgs e)
@@ -93,16 +93,17 @@ namespace QuanLyThuVienHVKTQS
 
         private void boqua_userbtn_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void thoat_userbtn_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void search_usertxt_TextChanged(object sender, EventArgs e)
         {
-          
+
+        }
     }
 }

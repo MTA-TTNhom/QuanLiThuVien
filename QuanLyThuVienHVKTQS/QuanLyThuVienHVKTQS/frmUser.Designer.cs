@@ -41,7 +41,7 @@
             this.quanLiSachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.quảnLýMượntrảSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            t
+            
             this.Sua_userbtn = new System.Windows.Forms.Button();
             this.Them_userbtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
