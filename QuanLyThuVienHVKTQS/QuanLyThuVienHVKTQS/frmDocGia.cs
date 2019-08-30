@@ -53,6 +53,36 @@ namespace QuanLyThuVienHVKTQS
             else ngaythedg.Text = l[0].ngaylamthe.ToString();
             if (l[0].handungthe == null) hanthedg.Text = "";
             else hanthedg.Text = l[0].handungthe.ToString();
+            foreach (var row in l)
+            {
+                ListViewItem item = new ListViewItem();
+                item.Text = "" + i++;
+                item.SubItems.Add(row.sothe.ToString());
+                item.SubItems.Add(row.hoten.ToString());
+                item.SubItems.Add(row.ngaysinh.ToString());
+                item.SubItems.Add(row.ngaylamthe.ToString());
+
+                listView_DG.Items.Add(item);
+            }
+            if (PhanQuyen.quyen == 1)
+                btn_enable(false);
+            else
+            {
+                groupDG.Enabled = false;
+                Them_DG.Enabled = Sua_DG.Enabled = Xoa_DG.Enabled = Luu_DG.Enabled = Boqua_DG.Enabled = false;
+                Thoat_DG.Enabled = true;
+            }
+        }
+        public void btn_enable(bool t)
+        {
+            groupDG.Enabled = t;
+            Them_DG.Enabled = !t;
+            Sua_DG.Enabled = !t;
+            Xoa_DG.Enabled = !t;
+            Luu_DG.Enabled = t;
+            Boqua_DG.Enabled = t;
+            Them_bool = false;
+            Sua_bool = false;
         }
 
     }
