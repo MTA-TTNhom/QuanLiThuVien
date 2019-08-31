@@ -24,11 +24,33 @@ namespace QuanLyThuVienHVKTQS
         }
         public void btn_enable(bool t)
         {
-
+            groupuser.Enabled = t;
+            luu_userbtn.Enabled = t;
+            boqua_userbtn.Enabled = t;
+            Them_userbtn.Enabled = !t;
+            Sua_userbtn.Enabled = !t;
+            xoa_userbtn.Enabled = !t;
+            Them_bool = Sua_bool = false;
         }
         public void HienThi_User()
         {
+            
+            var user = new UserController();
+            l = user.Detail();
+            listView_User.Items.Clear();
+            int i = 1;
+            foreach (User u in l)
+            {
+                ListViewItem item = new ListViewItem();
+                item.Text = "" + i++;
+                item.SubItems.Add(u.ID.ToString());
+                item.SubItems.Add(u.UserName.ToString());
+                item.SubItems.Add(u.Password.ToString());
+                item.SubItems.Add(u.IsAdmin.ToString());
 
+                listView_User.Items.Add(item);
+            }
+            btn_enable(false);
         }
 
         public void ListView_User_SelectedIndexChanged(object sender, EventArgs e)
