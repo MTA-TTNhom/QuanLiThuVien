@@ -84,6 +84,29 @@ namespace QuanLyThuVienHVKTQS
             Them_bool = false;
             Sua_bool = false;
         }
+        public void ListView_DG_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listView_DG.SelectedItems.Count == 0) return;
+            int id = Convert.ToInt32(listView_DG.SelectedItems[0].SubItems[1].Text);
+            int index = l.FindIndex(m => m.sothe == id);
+
+            sothetxt.Text = l[index].sothe.ToString();
+            tendgtxt.Text = l[index].hoten.ToString();
+            ngaysinhdg.Text = l[index].ngaysinh.ToString();
+            if (l[index].gioitinh == null) gioitinhdgtxt.Text = "";
+            else gioitinhdgtxt.Text = l[index].gioitinh.ToString();
+            if (l[index].email == null) emaildgtxt.Text = "";
+            else emaildgtxt.Text = l[index].email.ToString();
+            if (l[index].diachi == null) diachidgtxt.Text = "";
+            else diachidgtxt.Text = l[index].diachi.ToString();
+            if (l[index].socmtnd == null) socmtnddgtxt.Text = "";
+            else socmtnddgtxt.Text = l[index].socmtnd.ToString();
+            if (l[index].ngaylamthe == null) ngaythedg.Text = "";
+            else ngaythedg.Text = l[index].ngaylamthe.ToString();
+            if (l[index].handungthe == null) hanthedg.Text = "";
+            else hanthedg.Text = l[index].handungthe.ToString();
+
+        }
 
     }
 }
