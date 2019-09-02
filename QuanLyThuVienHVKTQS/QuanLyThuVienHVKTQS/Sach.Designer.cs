@@ -70,6 +70,7 @@
             this.grpEdit.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+
         }
 
         #endregion
