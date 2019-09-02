@@ -41,28 +41,7 @@
             this.quanLiSachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.quảnLýMượntrảSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listView_User = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.groupuser = new System.Windows.Forms.GroupBox();
-            this.IDtxt = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.isadmincbx = new System.Windows.Forms.ComboBox();
-            this.passwordtxt = new System.Windows.Forms.TextBox();
-            this.usernametxt = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.thoat_userbtn = new System.Windows.Forms.Button();
-            this.boqua_userbtn = new System.Windows.Forms.Button();
-            this.luu_userbtn = new System.Windows.Forms.Button();
-            this.xoa_userbtn = new System.Windows.Forms.Button();
+            
             this.Sua_userbtn = new System.Windows.Forms.Button();
             this.Them_userbtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -195,7 +174,7 @@
             this.listView_User.TabIndex = 2;
             this.listView_User.UseCompatibleStateImageBehavior = false;
             this.listView_User.View = System.Windows.Forms.View.Details;
-          
+            this.listView_User.SelectedIndexChanged += new System.EventHandler(this.ListView_User_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -327,7 +306,7 @@
             this.thoat_userbtn.TabIndex = 5;
             this.thoat_userbtn.Text = "Thoát";
             this.thoat_userbtn.UseVisualStyleBackColor = true;
-           
+            this.thoat_userbtn.Click += new System.EventHandler(this.thoat_userbtn_Click);
             // 
             // boqua_userbtn
             // 
@@ -337,7 +316,7 @@
             this.boqua_userbtn.TabIndex = 4;
             this.boqua_userbtn.Text = "Bỏ qua";
             this.boqua_userbtn.UseVisualStyleBackColor = true;
-           
+            this.boqua_userbtn.Click += new System.EventHandler(this.boqua_userbtn_Click);
             // 
             // luu_userbtn
             // 
@@ -347,7 +326,7 @@
             this.luu_userbtn.TabIndex = 3;
             this.luu_userbtn.Text = "Lưu";
             this.luu_userbtn.UseVisualStyleBackColor = true;
-         
+            this.luu_userbtn.Click += new System.EventHandler(this.luu_userbtn_Click);
             // 
             // xoa_userbtn
             // 
@@ -357,7 +336,7 @@
             this.xoa_userbtn.TabIndex = 2;
             this.xoa_userbtn.Text = "Xóa";
             this.xoa_userbtn.UseVisualStyleBackColor = true;
-         
+            this.xoa_userbtn.Click += new System.EventHandler(this.xoa_userbtn_Click);
             // 
             // Sua_userbtn
             // 
@@ -367,7 +346,7 @@
             this.Sua_userbtn.TabIndex = 1;
             this.Sua_userbtn.Text = "Sửa";
             this.Sua_userbtn.UseVisualStyleBackColor = true;
-          
+            this.Sua_userbtn.Click += new System.EventHandler(this.Sua_userbtn_Click);
             // 
             // Them_userbtn
             // 
@@ -377,7 +356,7 @@
             this.Them_userbtn.TabIndex = 0;
             this.Them_userbtn.Text = "Thêm";
             this.Them_userbtn.UseVisualStyleBackColor = true;
-          
+            this.Them_userbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -404,7 +383,7 @@
             this.search_usertxt.Name = "search_usertxt";
             this.search_usertxt.Size = new System.Drawing.Size(117, 20);
             this.search_usertxt.TabIndex = 6;
-          
+            this.search_usertxt.TextChanged += new System.EventHandler(this.search_usertxt_TextChanged);
             // 
             // frmUser
             // 
