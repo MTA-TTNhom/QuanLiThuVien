@@ -105,8 +105,26 @@ namespace QuanLyThuVienHVKTQS
             else ngaythedg.Text = l[index].ngaylamthe.ToString();
             if (l[index].handungthe == null) hanthedg.Text = "";
             else hanthedg.Text = l[index].handungthe.ToString();
-
+        }
+        private void Them_DG_Click(object sender, EventArgs e)
+        {
+            btn_enable(true);
+            sothetxt.Text = "";
+            tendgtxt.Text = "";
+            ngaysinhdg.Text = "";
+            gioitinhdgtxt.Text = "";
+            emaildgtxt.Text = "";
+            diachidgtxt.Text = "";
+            socmtnddgtxt.Text = "";
+            ngaythedg.Text = "";
+            hanthedg.Text = "";
+            this.Them_bool = true;
         }
 
+        private void Sua_DG_Click(object sender, EventArgs e)
+        {
+            btn_enable(true);
+            Sua_bool = true;
+        }
     }
 }
