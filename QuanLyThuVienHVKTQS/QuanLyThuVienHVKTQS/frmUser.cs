@@ -55,7 +55,24 @@ namespace QuanLyThuVienHVKTQS
 
         public void ListView_User_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (listView_User.SelectedItems.Count == 0) return;
+            int id = Convert.ToInt32(listView_User.SelectedItems[0].SubItems[1].Text);
+            int index = l.FindIndex(m=>m.ID==id);
 
+            IDtxt.Text = l[index].ID.ToString();
+            usernametxt.Text = l[index].UserName.ToString();
+            passwordtxt.Text = l[index].Password.ToString();
+            isadmincbx.Text = l[index].IsAdmin.ToString();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            btn_enable(true);
+            IDtxt.Text = "";
+            usernametxt.Text = "";
+            passwordtxt.Text = "";
+            isadmincbx.Text = "false";
+            Them_bool = true;
+            
         }
 
         private void Sua_userbtn_Click(object sender, EventArgs e)
