@@ -1,6 +1,6 @@
 ﻿namespace QuanLyThuVienHVKTQS
 {
-    partial class Sach
+    partial class frmSach
     {
         /// <summary>
         /// Required designer variable.
@@ -129,6 +129,7 @@
             this.btnXoaSach.TabIndex = 2;
             this.btnXoaSach.Text = "Xóa";
             this.btnXoaSach.UseVisualStyleBackColor = true;
+
             // 
             // btnSuaSach
             // 
@@ -377,7 +378,6 @@
             this.txtNamXB.Size = new System.Drawing.Size(83, 22);
             this.txtNamXB.TabIndex = 9;
             // 
-         
             // cbbNXB
             // 
             this.cbbNXB.FormattingEnabled = true;
@@ -386,9 +386,6 @@
             this.cbbNXB.Name = "cbbNXB";
             this.cbbNXB.Size = new System.Drawing.Size(197, 24);
             this.cbbNXB.TabIndex = 25;
-           
-            
-            
             // 
             // grpEdit
             // 
@@ -420,9 +417,6 @@
             this.grpEdit.Size = new System.Drawing.Size(520, 497);
             this.grpEdit.TabIndex = 1;
             this.grpEdit.TabStop = false;
-          
-            
-            
             // 
             // groupBox1
             // 
@@ -435,9 +429,6 @@
             this.groupBox1.Size = new System.Drawing.Size(520, 78);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-           
-            
-            
             // 
             // search_sachtxt
             // 
@@ -446,8 +437,6 @@
             this.search_sachtxt.Name = "search_sachtxt";
             this.search_sachtxt.Size = new System.Drawing.Size(203, 22);
             this.search_sachtxt.TabIndex = 1;
-
-
 
             // 
             // label10
@@ -459,7 +448,6 @@
             this.label10.Size = new System.Drawing.Size(64, 17);
             this.label10.TabIndex = 0;
             this.label10.Text = "Tìm kiếm";
-
 
             // 
             // frmSach
@@ -481,8 +469,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-
-
 
         }
 
