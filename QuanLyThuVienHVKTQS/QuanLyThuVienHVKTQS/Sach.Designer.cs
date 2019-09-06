@@ -377,6 +377,7 @@
             this.txtNamXB.Size = new System.Drawing.Size(83, 22);
             this.txtNamXB.TabIndex = 9;
             // 
+         
             // cbbNXB
             // 
             this.cbbNXB.FormattingEnabled = true;
@@ -385,6 +386,9 @@
             this.cbbNXB.Name = "cbbNXB";
             this.cbbNXB.Size = new System.Drawing.Size(197, 24);
             this.cbbNXB.TabIndex = 25;
+           
+            
+            
             // 
             // grpEdit
             // 
@@ -416,6 +420,9 @@
             this.grpEdit.Size = new System.Drawing.Size(520, 497);
             this.grpEdit.TabIndex = 1;
             this.grpEdit.TabStop = false;
+          
+            
+            
             // 
             // groupBox1
             // 
@@ -428,6 +435,9 @@
             this.groupBox1.Size = new System.Drawing.Size(520, 78);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+           
+            
+            
             // 
             // search_sachtxt
             // 
@@ -436,6 +446,8 @@
             this.search_sachtxt.Name = "search_sachtxt";
             this.search_sachtxt.Size = new System.Drawing.Size(203, 22);
             this.search_sachtxt.TabIndex = 1;
+
+
 
             // 
             // label10
@@ -447,6 +459,31 @@
             this.label10.Size = new System.Drawing.Size(64, 17);
             this.label10.TabIndex = 0;
             this.label10.Text = "Tìm kiếm";
+
+
+            // 
+            // frmSach
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1135, 673);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.lvSach);
+            this.Controls.Add(this.groupsach_btn);
+            this.Controls.Add(this.grpEdit);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frmSach";
+            this.Text = "frmSach";
+
+            this.groupsach_btn.ResumeLayout(false);
+            this.grpEdit.ResumeLayout(false);
+            this.grpEdit.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+
+
+
         }
 
         #endregion
