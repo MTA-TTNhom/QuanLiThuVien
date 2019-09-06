@@ -344,6 +344,109 @@
             this.txtNgonNgu.Name = "txtNgonNgu";
             this.txtNgonNgu.Size = new System.Drawing.Size(303, 22);
             this.txtNgonNgu.TabIndex = 14;
+            // 
+            // txtSoTrang
+            // 
+            this.txtSoTrang.Location = new System.Drawing.Point(124, 214);
+            this.txtSoTrang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoTrang.Name = "txtSoTrang";
+            this.txtSoTrang.Size = new System.Drawing.Size(197, 22);
+            this.txtSoTrang.TabIndex = 10;
+            // 
+            // txtTheLoai
+            // 
+            this.txtTheLoai.Location = new System.Drawing.Point(124, 357);
+            this.txtTheLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTheLoai.Name = "txtTheLoai";
+            this.txtTheLoai.Size = new System.Drawing.Size(303, 22);
+            this.txtTheLoai.TabIndex = 15;
+            // 
+            // txtSoLuong
+            // 
+            this.txtSoLuong.Location = new System.Drawing.Point(121, 405);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(115, 22);
+            this.txtSoLuong.TabIndex = 13;
+            // 
+            // txtNamXB
+            // 
+            this.txtNamXB.Location = new System.Drawing.Point(120, 453);
+            this.txtNamXB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNamXB.Name = "txtNamXB";
+            this.txtNamXB.Size = new System.Drawing.Size(83, 22);
+            this.txtNamXB.TabIndex = 9;
+            // 
+            // cbbNXB
+            // 
+            this.cbbNXB.FormattingEnabled = true;
+            this.cbbNXB.Location = new System.Drawing.Point(124, 170);
+            this.cbbNXB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbNXB.Name = "cbbNXB";
+            this.cbbNXB.Size = new System.Drawing.Size(197, 24);
+            this.cbbNXB.TabIndex = 25;
+            // 
+            // grpEdit
+            // 
+            this.grpEdit.Controls.Add(this.cbbNXB);
+            this.grpEdit.Controls.Add(this.txtNamXB);
+            this.grpEdit.Controls.Add(this.txtSoLuong);
+            this.grpEdit.Controls.Add(this.txtTheLoai);
+            this.grpEdit.Controls.Add(this.txtSoTrang);
+            this.grpEdit.Controls.Add(this.txtNgonNgu);
+            this.grpEdit.Controls.Add(this.txtGiaTien);
+            this.grpEdit.Controls.Add(this.txtTacGia);
+            this.grpEdit.Controls.Add(this.txtTenSach);
+            this.grpEdit.Controls.Add(this.txtMaSach);
+            this.grpEdit.Controls.Add(this.label11);
+            this.grpEdit.Controls.Add(this.label9);
+            this.grpEdit.Controls.Add(this.label8);
+            this.grpEdit.Controls.Add(this.label7);
+            this.grpEdit.Controls.Add(this.label6);
+            this.grpEdit.Controls.Add(this.label5);
+            this.grpEdit.Controls.Add(this.label4);
+            this.grpEdit.Controls.Add(this.label3);
+            this.grpEdit.Controls.Add(this.label2);
+            this.grpEdit.Controls.Add(this.label1);
+            this.grpEdit.Enabled = false;
+            this.grpEdit.Location = new System.Drawing.Point(605, 85);
+            this.grpEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpEdit.Name = "grpEdit";
+            this.grpEdit.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpEdit.Size = new System.Drawing.Size(520, 497);
+            this.grpEdit.TabIndex = 1;
+            this.grpEdit.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.search_sachtxt);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Location = new System.Drawing.Point(605, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(520, 78);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            // 
+            // search_sachtxt
+            // 
+            this.search_sachtxt.Location = new System.Drawing.Point(189, 32);
+            this.search_sachtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.search_sachtxt.Name = "search_sachtxt";
+            this.search_sachtxt.Size = new System.Drawing.Size(203, 22);
+            this.search_sachtxt.TabIndex = 1;
+
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(116, 36);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(64, 17);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Tìm kiếm";
         }
 
         #endregion
