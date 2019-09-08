@@ -96,7 +96,7 @@
             this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
-
+  
             // 
             // btnBoQua
             // 
@@ -118,7 +118,7 @@
             this.btnLuuSach.TabIndex = 3;
             this.btnLuuSach.Text = "Lưu";
             this.btnLuuSach.UseVisualStyleBackColor = true;
-
+     
             // 
             // btnXoaSach
             // 
@@ -129,7 +129,7 @@
             this.btnXoaSach.TabIndex = 2;
             this.btnXoaSach.Text = "Xóa";
             this.btnXoaSach.UseVisualStyleBackColor = true;
-
+     
             // 
             // btnSuaSach
             // 
@@ -140,7 +140,7 @@
             this.btnSuaSach.TabIndex = 1;
             this.btnSuaSach.Text = "Sửa";
             this.btnSuaSach.UseVisualStyleBackColor = true;
-
+     
             // 
             // btnThemSach
             // 
@@ -151,7 +151,7 @@
             this.btnThemSach.TabIndex = 0;
             this.btnThemSach.Text = "Thêm";
             this.btnThemSach.UseVisualStyleBackColor = true;
-
+    
             // 
             // lvSach
             // 
@@ -172,7 +172,7 @@
             this.lvSach.TabIndex = 0;
             this.lvSach.UseCompatibleStateImageBehavior = false;
             this.lvSach.View = System.Windows.Forms.View.Details;
-
+ 
             // 
             // columnHeader1
             // 
@@ -462,7 +462,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmSach";
             this.Text = "frmSach";
-
+  
             this.groupsach_btn.ResumeLayout(false);
             this.grpEdit.ResumeLayout(false);
             this.grpEdit.PerformLayout();
