@@ -378,8 +378,99 @@
             this.Them_userbtn.Text = "Thêm";
             this.Them_userbtn.UseVisualStyleBackColor = true;
             this.Them_userbtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(35, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Tìm kiếm";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.search_usertxt);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Location = new System.Drawing.Point(285, 27);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(294, 53);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            // 
+            // search_usertxt
+            // 
+            this.search_usertxt.Location = new System.Drawing.Point(98, 22);
+            this.search_usertxt.Name = "search_usertxt";
+            this.search_usertxt.Size = new System.Drawing.Size(117, 20);
+            this.search_usertxt.TabIndex = 6;
+            this.search_usertxt.TextChanged += new System.EventHandler(this.search_usertxt_TextChanged);
+            // 
+            // frmUser
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(584, 303);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupuser);
+            this.Controls.Add(this.listView_User);
+            this.Controls.Add(this.menuStrip1);
+            this.Name = "frmUser";
+            this.Text = "frmUser";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.groupuser.ResumeLayout(false);
+            this.groupuser.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem quanLiHêThôngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đăngXuâtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem thoatChươngTrinhToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quanLiDanhMucToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem danhMucĐôcGiaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem danhMucNhânViênToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem danhMucNhaXuâtBanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quanLiSachToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýMượntrảSáchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ListView listView_User;
+        private System.Windows.Forms.GroupBox groupuser;
+        private System.Windows.Forms.ComboBox isadmincbx;
+        private System.Windows.Forms.TextBox passwordtxt;
+        private System.Windows.Forms.TextBox usernametxt;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button Them_userbtn;
+        private System.Windows.Forms.Button thoat_userbtn;
+        private System.Windows.Forms.Button boqua_userbtn;
+        private System.Windows.Forms.Button luu_userbtn;
+        private System.Windows.Forms.Button xoa_userbtn;
+        private System.Windows.Forms.Button Sua_userbtn;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.TextBox IDtxt;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox search_usertxt;
     }
 }
