@@ -195,7 +195,7 @@
             this.listView_User.TabIndex = 2;
             this.listView_User.UseCompatibleStateImageBehavior = false;
             this.listView_User.View = System.Windows.Forms.View.Details;
-            this.listView_User.SelectedIndexChanged += new System.EventHandler(this.ListView_User_SelectedIndexChanged);
+ 
             // 
             // columnHeader1
             // 
@@ -327,7 +327,7 @@
             this.thoat_userbtn.TabIndex = 5;
             this.thoat_userbtn.Text = "Thoát";
             this.thoat_userbtn.UseVisualStyleBackColor = true;
-            this.thoat_userbtn.Click += new System.EventHandler(this.thoat_userbtn_Click);
+
             // 
             // boqua_userbtn
             // 
@@ -337,7 +337,7 @@
             this.boqua_userbtn.TabIndex = 4;
             this.boqua_userbtn.Text = "Bỏ qua";
             this.boqua_userbtn.UseVisualStyleBackColor = true;
-            this.boqua_userbtn.Click += new System.EventHandler(this.boqua_userbtn_Click);
+
             // 
             // luu_userbtn
             // 
@@ -347,7 +347,7 @@
             this.luu_userbtn.TabIndex = 3;
             this.luu_userbtn.Text = "Lưu";
             this.luu_userbtn.UseVisualStyleBackColor = true;
-            this.luu_userbtn.Click += new System.EventHandler(this.luu_userbtn_Click);
+
             // 
             // xoa_userbtn
             // 
@@ -357,7 +357,7 @@
             this.xoa_userbtn.TabIndex = 2;
             this.xoa_userbtn.Text = "Xóa";
             this.xoa_userbtn.UseVisualStyleBackColor = true;
-            this.xoa_userbtn.Click += new System.EventHandler(this.xoa_userbtn_Click);
+
             // 
             // Sua_userbtn
             // 
@@ -367,7 +367,7 @@
             this.Sua_userbtn.TabIndex = 1;
             this.Sua_userbtn.Text = "Sửa";
             this.Sua_userbtn.UseVisualStyleBackColor = true;
-            this.Sua_userbtn.Click += new System.EventHandler(this.Sua_userbtn_Click);
+
             // 
             // Them_userbtn
             // 
@@ -377,7 +377,7 @@
             this.Them_userbtn.TabIndex = 0;
             this.Them_userbtn.Text = "Thêm";
             this.Them_userbtn.UseVisualStyleBackColor = true;
-            this.Them_userbtn.Click += new System.EventHandler(this.button1_Click);
+
             // 
             // label5
             // 
@@ -404,7 +404,7 @@
             this.search_usertxt.Name = "search_usertxt";
             this.search_usertxt.Size = new System.Drawing.Size(117, 20);
             this.search_usertxt.TabIndex = 6;
-            this.search_usertxt.TextChanged += new System.EventHandler(this.search_usertxt_TextChanged);
+
             // 
             // frmUser
             // 
