@@ -51,7 +51,7 @@
             this.passwordtxt = new System.Windows.Forms.TextBox();
             this.dangnhapbtn = new System.Windows.Forms.Button();
             this.dangkybtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -206,7 +206,7 @@
             this.dangnhapbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dangnhapbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dangnhapbtn.Font = new System.Drawing.Font("Myriad Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dangnhapbtn.Location = new System.Drawing.Point(187, 199);
+            this.dangnhapbtn.Location = new System.Drawing.Point(187, 173);
             this.dangnhapbtn.Name = "dangnhapbtn";
             this.dangnhapbtn.Size = new System.Drawing.Size(174, 28);
             this.dangnhapbtn.TabIndex = 5;
@@ -219,7 +219,7 @@
             this.dangkybtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dangkybtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dangkybtn.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dangkybtn.Location = new System.Drawing.Point(187, 280);
+            this.dangkybtn.Location = new System.Drawing.Point(357, 253);
             this.dangkybtn.Name = "dangkybtn";
             this.dangkybtn.Size = new System.Drawing.Size(174, 28);
             this.dangkybtn.TabIndex = 6;
@@ -227,22 +227,23 @@
             this.dangkybtn.UseVisualStyleBackColor = false;
             this.dangkybtn.Click += new System.EventHandler(this.dangkybtn_Click);
             // 
-            // textBox1
+            // labelName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(187, 254);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 27);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.Text = "Chưa có tài khoản";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Location = new System.Drawing.Point(184, 257);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(167, 20);
+            this.labelName.TabIndex = 7;
+            this.labelName.Text = "Nếu chưa có tài khoản";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(634, 411);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.labelName);
             this.Controls.Add(this.dangkybtn);
             this.Controls.Add(this.dangnhapbtn);
             this.Controls.Add(this.passwordtxt);
@@ -284,7 +285,7 @@
         private System.Windows.Forms.Button dangkybtn;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem quanlynguoidung_toolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelName;
     }
 }
 
