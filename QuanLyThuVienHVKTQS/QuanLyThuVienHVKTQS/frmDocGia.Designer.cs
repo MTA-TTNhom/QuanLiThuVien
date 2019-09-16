@@ -73,6 +73,7 @@
             // 
             // groupdg_btn
             // 
+            this.groupdg_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupdg_btn.Controls.Add(this.Thoat_DG);
             this.groupdg_btn.Controls.Add(this.Boqua_DG);
             this.groupdg_btn.Controls.Add(this.Luu_DG);
@@ -87,66 +88,83 @@
             // 
             // Thoat_DG
             // 
+            this.Thoat_DG.BackColor = System.Drawing.Color.Red;
+            this.Thoat_DG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Thoat_DG.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thoat_DG.Location = new System.Drawing.Point(339, 19);
             this.Thoat_DG.Name = "Thoat_DG";
             this.Thoat_DG.Size = new System.Drawing.Size(51, 23);
             this.Thoat_DG.TabIndex = 5;
             this.Thoat_DG.Text = "Thoát";
-            this.Thoat_DG.UseVisualStyleBackColor = true;
-        
+            this.Thoat_DG.UseVisualStyleBackColor = false;
             // 
             // Boqua_DG
             // 
+            this.Boqua_DG.BackColor = System.Drawing.Color.Yellow;
+            this.Boqua_DG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Boqua_DG.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Boqua_DG.Location = new System.Drawing.Point(273, 19);
             this.Boqua_DG.Name = "Boqua_DG";
             this.Boqua_DG.Size = new System.Drawing.Size(60, 23);
             this.Boqua_DG.TabIndex = 4;
             this.Boqua_DG.Text = "Bỏ qua";
-            this.Boqua_DG.UseVisualStyleBackColor = true;
-           
+            this.Boqua_DG.UseVisualStyleBackColor = false;
             // 
             // Luu_DG
             // 
+            this.Luu_DG.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Luu_DG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Luu_DG.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Luu_DG.Location = new System.Drawing.Point(208, 19);
             this.Luu_DG.Name = "Luu_DG";
             this.Luu_DG.Size = new System.Drawing.Size(59, 23);
             this.Luu_DG.TabIndex = 3;
             this.Luu_DG.Text = "Lưu";
-            this.Luu_DG.UseVisualStyleBackColor = true;
-         
+            this.Luu_DG.UseVisualStyleBackColor = false;
+            this.Luu_DG.Click += new System.EventHandler(this.Luu_DG_Click_1);
             // 
             // Xoa_DG
             // 
+            this.Xoa_DG.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Xoa_DG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Xoa_DG.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Xoa_DG.Location = new System.Drawing.Point(142, 19);
             this.Xoa_DG.Name = "Xoa_DG";
             this.Xoa_DG.Size = new System.Drawing.Size(60, 23);
             this.Xoa_DG.TabIndex = 2;
             this.Xoa_DG.Text = "Xóa";
-            this.Xoa_DG.UseVisualStyleBackColor = true;
-           
+            this.Xoa_DG.UseVisualStyleBackColor = false;
+            this.Xoa_DG.Click += new System.EventHandler(this.Xoa_DG_Click_1);
             // 
             // Sua_DG
             // 
+            this.Sua_DG.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Sua_DG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Sua_DG.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sua_DG.Location = new System.Drawing.Point(78, 19);
             this.Sua_DG.Name = "Sua_DG";
             this.Sua_DG.Size = new System.Drawing.Size(58, 23);
             this.Sua_DG.TabIndex = 1;
             this.Sua_DG.Text = "Sửa";
-            this.Sua_DG.UseVisualStyleBackColor = true;
-           
+            this.Sua_DG.UseVisualStyleBackColor = false;
+            this.Sua_DG.Click += new System.EventHandler(this.Sua_DG_Click_1);
             // 
             // Them_DG
             // 
+            this.Them_DG.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Them_DG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Them_DG.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Them_DG.Location = new System.Drawing.Point(14, 19);
             this.Them_DG.Name = "Them_DG";
             this.Them_DG.Size = new System.Drawing.Size(58, 23);
             this.Them_DG.TabIndex = 0;
             this.Them_DG.Text = "Thêm";
-            this.Them_DG.UseVisualStyleBackColor = true;
-           
+            this.Them_DG.UseVisualStyleBackColor = false;
+            this.Them_DG.Click += new System.EventHandler(this.Them_DG_Click_1);
             // 
             // groupDG
             // 
+            this.groupDG.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.groupDG.Controls.Add(this.hanthedg);
             this.groupDG.Controls.Add(this.ngaythedg);
             this.groupDG.Controls.Add(this.ngaysinhdg);
@@ -202,12 +220,14 @@
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(304, 142);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 28;
             this.button7.Text = "ảnh mới";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -253,7 +273,6 @@
             this.diachidgtxt.Name = "diachidgtxt";
             this.diachidgtxt.Size = new System.Drawing.Size(297, 20);
             this.diachidgtxt.TabIndex = 14;
-            
             // 
             // tendgtxt
             // 
@@ -322,7 +341,6 @@
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Địa chỉ";
-        
             // 
             // label2
             // 
@@ -352,13 +370,13 @@
             this.columnHeader3});
             this.listView_DG.FullRowSelect = true;
             this.listView_DG.GridLines = true;
+            this.listView_DG.HideSelection = false;
             this.listView_DG.Location = new System.Drawing.Point(11, 4);
             this.listView_DG.Name = "listView_DG";
             this.listView_DG.Size = new System.Drawing.Size(403, 535);
             this.listView_DG.TabIndex = 7;
             this.listView_DG.UseCompatibleStateImageBehavior = false;
             this.listView_DG.View = System.Windows.Forms.View.Details;
-           
             // 
             // STT
             // 
@@ -389,12 +407,12 @@
             // 
             this.searchtxt.Location = new System.Drawing.Point(93, 33);
             this.searchtxt.Name = "searchtxt";
-            this.searchtxt.Size = new System.Drawing.Size(162, 20);
+            this.searchtxt.Size = new System.Drawing.Size(200, 20);
             this.searchtxt.TabIndex = 8;
-           
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.searchtxt);
             this.groupBox1.Location = new System.Drawing.Point(420, 4);

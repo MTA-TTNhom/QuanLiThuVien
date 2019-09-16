@@ -215,5 +215,27 @@ namespace QuanLyThuVienHVKTQS
                 listView_DG.Items.Add(item);
             }
         }
+
+        private void Them_DG_Click_1(object sender, EventArgs e)
+        {
+            Xoa_DG.Enabled = false;
+            Sua_DG.Enabled = false;
+        }
+
+        private void Xoa_DG_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Sua_DG_Click_1(object sender, EventArgs e)
+        {
+            Them_DG.Enabled = false;
+            Xoa_DG.Enabled = false;
+        }
+
+        private void Luu_DG_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
