@@ -187,5 +187,10 @@ namespace QuanLyThuVienHVKTQS
         {
             Show_Sach();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
