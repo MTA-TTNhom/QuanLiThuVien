@@ -197,5 +197,18 @@ namespace QuanLyThuVienHVKTQS
         {
 
         }
+
+        private void frmMain_VisibleChanged(object sender, EventArgs e)
+        {
+            dangkybtn.Visible = false;
+            dangnhapbtn.Visible = false;
+            frmMain a = new frmMain();
+            a.Hide();
+        }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
