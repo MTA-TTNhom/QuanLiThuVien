@@ -52,6 +52,7 @@
             this.dangnhapbtn = new System.Windows.Forms.Button();
             this.dangkybtn = new System.Windows.Forms.Button();
             this.labelName = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,6 +116,7 @@
             this.danhMucĐôcGiaToolStripMenuItem.Name = "danhMucĐôcGiaToolStripMenuItem";
             this.danhMucĐôcGiaToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.danhMucĐôcGiaToolStripMenuItem.Text = "Danh mục độc giả";
+            this.danhMucĐôcGiaToolStripMenuItem.Click += new System.EventHandler(this.danhMucĐôcGiaToolStripMenuItem_Click_1);
             // 
             // danhMucNhânViênToolStripMenuItem
             // 
@@ -237,12 +239,24 @@
             this.labelName.TabIndex = 7;
             this.labelName.Text = "Nếu chưa có tài khoản";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Modern No. 20", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(99, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(450, 38);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Hệ thống quản lý thư viện";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(634, 411);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.dangkybtn);
             this.Controls.Add(this.dangnhapbtn);
@@ -286,6 +300,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem quanlynguoidung_toolStripMenuItem;
         private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label label3;
     }
 }
 

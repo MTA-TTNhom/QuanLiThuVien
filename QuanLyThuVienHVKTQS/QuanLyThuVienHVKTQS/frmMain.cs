@@ -192,5 +192,10 @@ namespace QuanLyThuVienHVKTQS
         {
 
         }
+
+        private void danhMucĐôcGiaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

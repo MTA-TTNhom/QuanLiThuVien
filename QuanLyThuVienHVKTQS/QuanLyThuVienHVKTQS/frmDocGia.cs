@@ -237,5 +237,10 @@ namespace QuanLyThuVienHVKTQS
         {
 
         }
+
+        private void ngaythedg_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
