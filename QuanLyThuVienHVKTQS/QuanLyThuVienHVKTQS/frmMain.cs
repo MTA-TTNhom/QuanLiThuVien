@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyThuVienHVKTQS.controller;
+using QuanLyThuVienHVKTQS.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,8 +10,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace QuanLyThuVienHVKTQS
 {
+    
     public partial class frmMain : Form
     {
         public frmMain()
@@ -20,7 +24,7 @@ namespace QuanLyThuVienHVKTQS
         public void Load_Main()
         {
             quanLiDanhMucToolStripMenuItem.Enabled = false;
-            if (PhanQuyen.quyen == 1)
+            if(PhanQuyen.quyen==1)
             {
                 quanLiDanhMucToolStripMenuItem.Enabled = true;
                 đăngXuâtToolStripMenuItem.Enabled = true;
@@ -32,7 +36,7 @@ namespace QuanLyThuVienHVKTQS
                 quanlynguoidung_toolStripMenuItem.Enabled = true;
 
             }
-            else if (PhanQuyen.quyen == 0)
+            else if(PhanQuyen.quyen==0)
             {
                 quanLiDanhMucToolStripMenuItem.Enabled = true;
                 đăngXuâtToolStripMenuItem.Enabled = true;
@@ -49,7 +53,7 @@ namespace QuanLyThuVienHVKTQS
                 quanLiDanhMucToolStripMenuItem.Enabled = false;
             }
         }
-
+        
         private void Show_NXB()
         {
             frmNhaXuatBan nxb = new frmNhaXuatBan();
@@ -84,12 +88,14 @@ namespace QuanLyThuVienHVKTQS
         {
 
         }
+
+        //Đăng nhập
         private void dangnhapbtn_Click(object sender, EventArgs e)
         {
             var entity = new User();
             entity.UserName = usernametxt.Text;
             entity.Password = passwordtxt.Text;
-
+            
             try
             {
                 var s = new UserController();
@@ -114,17 +120,17 @@ namespace QuanLyThuVienHVKTQS
                     Load_Main();
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show("Đăng nhập không thành công");
                 PhanQuyen.quyen = -1;
                 Load_Main();
 
             }
-
+            
         }
 
-
+        
 
         private void đăngXuâtToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -188,35 +194,6 @@ namespace QuanLyThuVienHVKTQS
             Show_Sach();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void danhMucĐôcGiaToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmMain_VisibleChanged(object sender, EventArgs e)
-        {
-            dangkybtn.Visible = false;
-            dangnhapbtn.Visible = false;
-            frmMain a = new frmMain();
-            a.Hide();
-        }
-
-        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmPhanHoi open = new frmPhanHoi();
-            open.Show();
-            frmMain close = new frmMain();
-            close.Hide();
-        }
     }
 }

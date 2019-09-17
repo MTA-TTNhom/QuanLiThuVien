@@ -22,6 +22,8 @@ namespace QuanLyThuVienHVKTQS
             InitializeComponent();
             HienThi_DG();
         }
+
+
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -31,6 +33,7 @@ namespace QuanLyThuVienHVKTQS
         {
 
         }
+
         public void HienThi_DG()
         {
             var dg = new DocGiaController();
@@ -73,6 +76,7 @@ namespace QuanLyThuVienHVKTQS
                 Thoat_DG.Enabled = true;
             }
         }
+
         public void btn_enable(bool t)
         {
             groupDG.Enabled = t;
@@ -105,7 +109,9 @@ namespace QuanLyThuVienHVKTQS
             else ngaythedg.Text = l[index].ngaylamthe.ToString();
             if (l[index].handungthe == null) hanthedg.Text = "";
             else hanthedg.Text = l[index].handungthe.ToString();
+
         }
+      
         private void Them_DG_Click(object sender, EventArgs e)
         {
             btn_enable(true);
@@ -126,6 +132,7 @@ namespace QuanLyThuVienHVKTQS
             btn_enable(true);
             Sua_bool = true;
         }
+
         private void Xoa_DG_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có muốn xóa độc giả này?", "delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
@@ -139,13 +146,14 @@ namespace QuanLyThuVienHVKTQS
                     MessageBox.Show("Xóa độc giả lỗi");
             }
         }
+
         private void Luu_DG_Click(object sender, EventArgs e)
         {
             if (Them_bool == true && Sua_bool == false)
             {
                 var entity = new docgia();
 
-                entity.sothe = Convert.ToInt32(sothetxt.Text);
+                entity.sothe =Convert.ToInt32(sothetxt.Text);
                 entity.hoten = tendgtxt.Text;
                 entity.ngaysinh = ngaysinhdg.Value;
                 entity.gioitinh = gioitinhdgtxt.Text;
@@ -161,7 +169,7 @@ namespace QuanLyThuVienHVKTQS
                 else
                     MessageBox.Show("Thêm độc giả không thành công");
             }
-            if (Them_bool == false && Sua_bool == true)
+            if(Them_bool==false && Sua_bool==true)
             {
                 var entity = new docgia();
                 entity.sothe = Convert.ToInt32(sothetxt.Text);
@@ -182,6 +190,7 @@ namespace QuanLyThuVienHVKTQS
             }
             btn_enable(false);
         }
+
         private void Boqua_DG_Click(object sender, EventArgs e)
         {
             btn_enable(false);
@@ -214,33 +223,6 @@ namespace QuanLyThuVienHVKTQS
 
                 listView_DG.Items.Add(item);
             }
-        }
-
-        private void Them_DG_Click_1(object sender, EventArgs e)
-        {
-            Xoa_DG.Enabled = false;
-            Sua_DG.Enabled = false;
-        }
-
-        private void Xoa_DG_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Sua_DG_Click_1(object sender, EventArgs e)
-        {
-            Them_DG.Enabled = false;
-            Xoa_DG.Enabled = false;
-        }
-
-        private void Luu_DG_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ngaythedg_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
