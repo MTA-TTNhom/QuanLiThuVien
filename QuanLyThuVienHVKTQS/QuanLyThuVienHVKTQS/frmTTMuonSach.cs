@@ -191,5 +191,51 @@ namespace QuanLyThuVienHVKTQS
             }
             btn_edit(false);
         }
+
+        private void btnXoaSach_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("ban co thuc su muon xoa?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes)
+            {
+                int masach = Convert.ToInt32(txtMaSach.Text);
+                var s = new SachController();
+                if (s.Del(masach))
+                    HienThiSach();
+                else
+                {
+                    MessageBox.Show("khong xoa duoc!");
+                }
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            int i = 1;
+            QuanLiThuVienHVKTQSDataContext db = new QuanLiThuVienHVKTQSDataContext();
+            var lst = (from s in db.saches where (s.masach.ToString().Contains(search_sachtxt.Text) || s.tensach.ToString().Contains(search_sachtxt.Text)) select s).ToList();
+            lvSach.Items.Clear();
+            foreach (sach s in lst)
+            {
+                ListViewItem item = new ListViewItem();
+                item.Text = "" + i++;
+                item.SubItems.Add(s.masach.ToString());
+                item.SubItems.Add(s.tensach.ToString());
+                item.SubItems.Add(s.theloai.ToString());
+                item.SubItems.Add(s.ngonngu.ToString());
+                item.SubItems.Add(s.soluong.ToString());
+
+                lvSach.Items.Add(item);
+            }
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmSach_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
