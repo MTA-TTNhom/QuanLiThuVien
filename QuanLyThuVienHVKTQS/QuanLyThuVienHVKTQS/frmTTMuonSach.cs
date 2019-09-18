@@ -96,5 +96,35 @@ namespace QuanLyThuVienHVKTQS
             txtTheLoai.Text = l[index].theloai.ToString();
 
         }
+
+        private void btnThemSach_Click(object sender, EventArgs e)
+        {
+
+            btn_edit(true);
+            txtMaSach.Text = "";
+            txtTenSach.Text = "";
+            txtTacGia.Text = "";
+            //txtNXB.Text = "";
+            txtNamXB.Text = "";
+            txtSoTrang.Text = "";
+            txtGiaTien.Text = "";
+            txtSoLuong.Text = "";
+            txtNgonNgu.Text = "";
+            txtTheLoai.Text = "";
+            this.Them_bool = true;
+        }
+        public void btn_edit(bool t)
+        {
+            grpEdit.Enabled = t;
+            btnLuuSach.Enabled = t;
+            btnBoQua.Enabled = t;
+            btnThemSach.Enabled = !t;
+            btnSuaSach.Enabled = !t;
+            btnXoaSach.Enabled = !t;
+            btnThoat.Enabled = !t;
+            Them_bool = false;
+            Sua_bool = false;
+        }
+
     }
 }
