@@ -75,5 +75,26 @@ namespace QuanLyThuVienHVKTQS
                 btnThoat.Enabled = true;
             }
         }
+        private void lvSach_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvSach.SelectedItems.Count == 0)
+                return;
+            int i = Convert.ToInt32(lvSach.SelectedItems[0].SubItems[1].Text);
+            int index = l.FindIndex(m => m.masach == i);
+            txtMaSach.Text = l[index].masach.ToString();
+            txtTenSach.Text = l[index].tensach.ToString();
+            txtTacGia.Text = l[index].tentacgia.ToString();
+            if (l[index].manxb != null)
+                cbbNXB.Text = l[index].nhaxuatban.tennxb.ToString();
+            else
+                cbbNXB.Text = "";
+            txtNamXB.Text = l[index].namxb.ToString();
+            txtSoTrang.Text = l[index].sotrang.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
+
+        }
     }
 }
