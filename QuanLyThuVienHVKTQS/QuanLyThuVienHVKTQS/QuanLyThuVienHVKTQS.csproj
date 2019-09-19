@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="controller\DocGiaController.cs" />
     <Compile Include="controller\MuonSachController.cs" />
+    <Compile Include="controller\NhanVienController.cs" />
     <Compile Include="frmDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
