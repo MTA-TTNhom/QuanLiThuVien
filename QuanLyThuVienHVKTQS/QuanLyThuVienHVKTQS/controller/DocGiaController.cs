@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyThuVienHVKTQS.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,72 +7,109 @@ using System.Threading.Tasks;
 
 namespace QuanLyThuVienHVKTQS.controller
 {
-    class SachController
+
+    class DocGiaController
     {
+
         QuanLiThuVienHVKTQSDataContext db = null;
-        public SachController()
+        QuanLiThuVienHVKTQSDataContext db1 = null;
+
+        public DocGiaController()
         {
+
             db = new QuanLiThuVienHVKTQSDataContext();
+            db1 = new QuanLiThuVienHVKTQSDataContext();
         }
-        public List<sach> Detail()
+
+        public List<docgia> Detail()
         {
-            var list = db.saches.ToList();
+
+            var list = db.docgias.ToList();
+
             return list;
         }
-        public int Add(sach entity)
+
+        public int Add(docgia dg)
         {
+
+
             try
             {
-                db.saches.InsertOnSubmit(entity);
+                db.docgias.InsertOnSubmit(dg);
                 db.SubmitChanges();
-                return entity.masach;
+                return dg.sothe;
             }
             catch (Exception)
             {
+
                 return 0;
                 throw;
+
             }
+
+
         }
-        public bool Edit(sach entity)
+
+
+        public bool Edit(docgia dg)
         {
-            var obj = db.saches.First(m => m.masach == entity.masach);
+
+            var obj = db.docgias.First(m => m.sothe == dg.sothe);
             if (obj != null)
             {
                 try
                 {
-                    obj.tensach = entity.tensach;
-                    obj.tentacgia = entity.tentacgia;
-                    obj.manxb = entity.manxb;
-                    obj.namxb = entity.namxb;
-                    obj.sotrang = entity.sotrang;
-                    obj.giatien = entity.giatien;
-                    obj.soluong = entity.soluong;
-                    obj.ngonngu = entity.ngonngu;
-                    obj.theloai = entity.theloai;
+
+                    obj.hoten = dg.hoten;
+                    obj.ngaysinh = dg.ngaysinh;
+                    obj.gioitinh = dg.gioitinh;
+                    obj.email = dg.email;
+                    obj.diachi = dg.diachi;
+                    obj.socmtnd = dg.socmtnd;
+                    obj.ngaylamthe = dg.ngaylamthe;
+                    obj.handungthe = dg.handungthe;
                     db.SubmitChanges();
+
                 }
                 catch (Exception)
                 {
+
                     return false;
                     throw;
+
                 }
+
             }
+
             return true;
+
         }
-        public bool Del(int masach)
+
+
+        public bool delete(int id)
         {
             try
             {
-                var result = db.saches.First(m => m.masach == masach);
-                db.saches.DeleteOnSubmit(result);
+
+                var obj = db.docgias.First(m => m.sothe == id);
+                db.docgias.DeleteOnSubmit(obj);
                 db.SubmitChanges();
+
             }
             catch (Exception)
             {
+
                 return false;
                 throw;
+
             }
+
+
             return true;
+
         }
+
     }
+
+
 }
