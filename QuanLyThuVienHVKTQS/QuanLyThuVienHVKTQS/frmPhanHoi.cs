@@ -19,7 +19,10 @@ namespace QuanLyThuVienHVKTQS
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            frmPhanHoi close = new frmPhanHoi();
+            close.Hide();
+            frmMain open = new frmMain();
+            open.Show();
         }
     }
 }

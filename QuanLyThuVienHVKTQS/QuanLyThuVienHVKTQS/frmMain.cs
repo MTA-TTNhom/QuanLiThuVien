@@ -210,5 +210,13 @@ namespace QuanLyThuVienHVKTQS
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmPhanHoi open = new frmPhanHoi();
+            open.Show();
+            frmMain close = new frmMain();
+            close.Hide();
+        }
     }
 }
