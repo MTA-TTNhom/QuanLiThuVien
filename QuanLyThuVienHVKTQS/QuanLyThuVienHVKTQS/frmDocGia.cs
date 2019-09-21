@@ -193,6 +193,21 @@ namespace QuanLyThuVienHVKTQS
 
         private void Boqua_DG_Click(object sender, EventArgs e)
         {
+            QuanLiThuVienHVKTQSDataContext db = new QuanLiThuVienHVKTQSDataContext();
+            int i = 1;
+            var lst = (from s in db.docgias where (s.sothe.ToString().Contains(searchtxt.Text) || s.hoten.ToString().Contains(searchtxt.Text)) select s).ToList();
+            listView_DG.Items.Clear();
+            foreach (docgia d in lst)
+            {
+                ListViewItem item = new ListViewItem();
+                item.Text = "" + i++;
+                item.SubItems.Add(d.sothe.ToString());
+                item.SubItems.Add(d.hoten.ToString());
+                item.SubItems.Add(d.ngaysinh.ToString());
+                item.SubItems.Add(d.ngaylamthe.ToString());
+
+                listView_DG.Items.Add(item);
+            }
             btn_enable(false);
         }
 
