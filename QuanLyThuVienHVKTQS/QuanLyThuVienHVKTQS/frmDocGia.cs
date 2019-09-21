@@ -203,7 +203,21 @@ namespace QuanLyThuVienHVKTQS
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            QuanLiThuVienHVKTQSDataContext db = new QuanLiThuVienHVKTQSDataContext();
+            int i = 1;
+            var lst = (from s in db.docgias where (s.sothe.ToString().Contains(searchtxt.Text) || s.hoten.ToString().Contains(searchtxt.Text)) select s).ToList();
+            listView_DG.Items.Clear();
+            foreach (docgia d in lst)
+            {
+                ListViewItem item = new ListViewItem();
+                item.Text = "" + i++;
+                item.SubItems.Add(d.sothe.ToString());
+                item.SubItems.Add(d.hoten.ToString());
+                item.SubItems.Add(d.ngaysinh.ToString());
+                item.SubItems.Add(d.ngaylamthe.ToString());
 
+                listView_DG.Items.Add(item);
+            }
         }
 
         private void searchtxt_KeyUp(object sender, KeyEventArgs e)
@@ -223,6 +237,11 @@ namespace QuanLyThuVienHVKTQS
 
                 listView_DG.Items.Add(item);
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

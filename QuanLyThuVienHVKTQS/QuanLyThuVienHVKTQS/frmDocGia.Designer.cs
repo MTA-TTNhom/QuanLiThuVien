@@ -160,7 +160,7 @@
             // 
             // groupDG
             // 
-            this.groupDG.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupDG.BackColor = System.Drawing.Color.Maroon;
             this.groupDG.Controls.Add(this.hanthedg);
             this.groupDG.Controls.Add(this.ngaythedg);
             this.groupDG.Controls.Add(this.ngaysinhdg);
@@ -346,6 +346,7 @@
             this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên độc giả";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -410,7 +411,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.searchtxt);
             this.groupBox1.Location = new System.Drawing.Point(420, 4);
