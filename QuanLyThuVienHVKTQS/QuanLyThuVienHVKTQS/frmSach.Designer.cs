@@ -232,9 +232,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(18, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.Size = new System.Drawing.Size(106, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Tác giả";
+            this.label3.Text = "Tác giả viết sách";
             // 
             // label4
             // 
@@ -373,7 +373,7 @@
             // 
             // grpEdit
             // 
-            this.grpEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.grpEdit.BackColor = System.Drawing.Color.Navy;
             this.grpEdit.Controls.Add(this.cbbNXB);
             this.grpEdit.Controls.Add(this.txtNamXB);
             this.grpEdit.Controls.Add(this.txtSoLuong);
