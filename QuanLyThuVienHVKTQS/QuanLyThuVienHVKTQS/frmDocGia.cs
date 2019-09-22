@@ -145,6 +145,14 @@ namespace QuanLyThuVienHVKTQS
                 else
                     MessageBox.Show("Xóa độc giả lỗi");
             }
+            ListViewItem item = new ListViewItem();
+            item.Text = "" + i++;
+            item.SubItems.Add(d.sothe.ToString());
+            item.SubItems.Add(d.hoten.ToString());
+            item.SubItems.Add(d.ngaysinh.ToString());
+            item.SubItems.Add(d.ngaylamthe.ToString());
+
+            listView_DG.Items.Add(item);
         }
 
         private void Luu_DG_Click(object sender, EventArgs e)
