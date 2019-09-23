@@ -50,6 +50,8 @@
     <Compile Include="controller\MuonSachController.cs" />
     <Compile Include="controller\NhanVienController.cs" />
     <Compile Include="controller\NhaXuatBanController.cs" />
+    <Compile Include="controller\SachController.cs" />
+    <Compile Include="controller\UserController.cs" />
     <Compile Include="frmDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
