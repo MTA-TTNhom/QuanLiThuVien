@@ -65,20 +65,6 @@ namespace QuanLyThuVienHVKTQS.controller
         }
 
 
-        public bool delete(int id)
-        {
-            try
-            {
-                var obj = db.docgias.First(m => m.sothe == id);
-                db.docgias.DeleteOnSubmit(obj);
-                db.SubmitChanges();
-            }
-            catch(Exception)
-            {
-                return false;
-                throw;
-            }
-            return true;
-        }
+       
     }
 }
