@@ -165,24 +165,7 @@ namespace QuanLyThuVienHVKTQS
         {
             Show_NV();
         }
-        private void quảnLýMượntrảSáchToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Show_MS();
-        }
-
-        private void quanlynguoidung_toolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Show_User();
-        }
-        private void danhMucNhaXuâtBanToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Show_NXB();
-        }
-
-        private void quanLiSachToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Show_Sach();
-        }
+        
 
 
     }
