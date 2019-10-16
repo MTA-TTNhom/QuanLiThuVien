@@ -27,9 +27,15 @@ namespace QuanLyThuVienHVKTQS.controller
         {
             try
             {
-                db.docgias.InsertOnSubmit(dg);
-                db.SubmitChanges();
-                return dg.sothe;
+                var da = db.docgias.Where(m=>m.sothe==dg.sothe);
+                if (da == null)
+                {
+                    db.docgias.InsertOnSubmit(dg);
+                    db.SubmitChanges();
+                    return dg.sothe;
+                }
+                else return 0;
+               
             }
             catch(Exception)
             {
@@ -65,6 +71,22 @@ namespace QuanLyThuVienHVKTQS.controller
         }
 
 
-       
+        public bool delete(int id)
+        {
+            try
+            {
+                var obj = db.docgias.First(m => m.sothe == id);
+                List<MuonSach> lmm = db.muonsachs.where(m => m.sothe == id);
+                db.muonsachs.DeleteOnSubmit(lmm);
+                db.docgias.DeleteOnSubmit(obj);
+                db.SubmitChanges();
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
+            return true;
+        }
     }
 }
