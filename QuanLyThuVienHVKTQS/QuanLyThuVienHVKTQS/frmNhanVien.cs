@@ -14,7 +14,7 @@ namespace QuanLyThuVienHVKTQS
 {
     public partial class frmNhanVien : Form
     {
-        List<nhanvien> l =null;
+        List<nhanvien> l = null;
         private bool Them_bool = false;
         private bool Sua_bool = false;
         public frmNhanVien()
@@ -76,7 +76,7 @@ namespace QuanLyThuVienHVKTQS
             }
 
         }
-       
+
 
         private void ListView_NV_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -122,23 +122,13 @@ namespace QuanLyThuVienHVKTQS
             socmtndtxt.Text = "";
             quyenhantxt.Text = "";
             this.Them_bool = true;
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
         }
 
 
         private void XoaNV_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có muốn xóa nhân viên này?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if(result==DialogResult.Yes)
+            if (result == DialogResult.Yes)
             {
                 int id = Convert.ToInt32(manvtxt.Text);
                 var entity = new NhanVienController();
@@ -189,61 +179,11 @@ namespace QuanLyThuVienHVKTQS
                     MessageBox.Show("Sửa lỗi!");
             }
             btn_edit(false);
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
         }
 
         private void BoquaNV_Click(object sender, EventArgs e)
         {
             btn_edit(false);
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
-        }
-
-        private void anhmoinvbtn_Click(object sender, EventArgs e)
-        {
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
-            txtSoTrang.Text = l[index].sotrang.ToString();
-            txtGiaTien.Text = l[index].giatien.ToString();
-            txtSoLuong.Text = l[index].soluong.ToString();
-            txtNgonNgu.Text = l[index].ngonngu.ToString();
-            txtTheLoai.Text = l[index].theloai.ToString();
-
         }
     }
 }
