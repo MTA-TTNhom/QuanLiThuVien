@@ -1,5 +1,4 @@
-﻿using QuanLyThuVienHVKTQS.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,85 +9,80 @@ namespace QuanLyThuVienHVKTQS.controller
     class UserController
     {
         QuanLiThuVienHVKTQSDataContext db = null;
+        db1 = new QuanLiThuVienHVKTQSDataContext();
         public UserController()
         {
             db = new QuanLiThuVienHVKTQSDataContext();
-        }
-        public List<User>Detail()
-        {
-            var list=db.Users.ToList();
-            return list;
-        }
-        public int IsAdmin (User user)
-        {
-            var s = db.Users.First(m => m.UserName == user.UserName && m.Password == user.Password);
-            if(s!=null)
-            {
-                if (s.IsAdmin == true) return 1;
-                else return 0;
-            } 
-            else
-            {
-                return -1;
-            }
+            db1 = new QuanLiThuVienHVKTQSDataContext();
         }
 
-        public int Add(User user)
+        public List<User> Detail()
+        {
+            var list = db.Users.ToList();
+            return list;
+        }
+
+        public int Add(User dg)
         {
             try
             {
-                var result = db.Users.First(m => m.UserName == user.UserName);
-                if (result == null)
+                var da = db.Users.Where(m => m.ID == dg.ID);
+                if (da == null)
                 {
-                    db.Users.InsertOnSubmit(user);
+                    db.Users.InsertOnSubmit(dg);
                     db.SubmitChanges();
-                    return user.ID;
+                    return dg.ID;
                 }
-                else return -1;
+                else return 0;
+
             }
-            catch(Exception)
+            catch (Exception)
             {
                 return 0;
+                throw;
             }
         }
-        public bool Edit(User user)
+
+        public bool Edit(User dg)
         {
-            var obj = db.Users.First(m => m.ID == user.ID);
-            if(obj!=null)
+            var obj = db.Users.First(m => m.ID == dg.ID);
+            if (obj != null)
             {
                 try
                 {
-                    obj.UserName = user.UserName;
-                    obj.Password = user.Password;
-                    obj.IsAdmin = user.IsAdmin;
-
+                    obj.ID = dg.ID;
+                    obj.UserName = dg.UserName;
+                    obj.Password = dg.Password;
+                    obj.IsAdmin = dg.IsAdmin;
+                   
                     db.SubmitChanges();
-                    return true;
                 }
-                catch(Exception)
-                { return false;
+                catch (Exception)
+                {
+                    return false;
                     throw;
                 }
             }
-            else
-            {
-                return false;
-            }
+            return true;
         }
-        public bool Delete(int id)
+
+
+        public bool delete(int id)
         {
             try
             {
                 var obj = db.Users.First(m => m.ID == id);
+                List<User> lmm = db.Users.where(m => m.ID == id);
+                //db.Users.DeleteOnSubmit(lmm);
                 db.Users.DeleteOnSubmit(obj);
                 db.SubmitChanges();
-                return true;
             }
             catch (Exception)
             {
                 return false;
                 throw;
             }
+            return true;
         }
     }
 }
