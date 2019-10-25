@@ -119,19 +119,7 @@ namespace QuanLyThuVienHVKTQS
             txtTheLoai.Text = "";
             this.Them_bool = true;
         }
-        public void btn_edit(bool t)
-        {
-            grpEdit.Enabled = t;
-            btnLuuSach.Enabled = t;
-            btnBoQua.Enabled = t;
-            btnThemSach.Enabled = !t;
-            btnSuaSach.Enabled = !t;
-            btnXoaSach.Enabled = !t;
-            btnThoat.Enabled = !t;
-            Them_bool = false;
-            Sua_bool = false;
-  
-        }
+     
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -235,14 +223,5 @@ namespace QuanLyThuVienHVKTQS
             }
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void FrmSach_Load(object sender, EventArgs e)
-        {
-
-        }
-    }
 }
