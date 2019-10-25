@@ -102,7 +102,14 @@ namespace QuanLyThuVienHVKTQS
 
 
         }
-
+        List<sach> l = null;
+        private bool Them_bool = false;
+        private bool Sua_bool = false;
+        public frmSach()
+        {
+            InitializeComponent();
+            HienThiSach();
+        }
         private void btnThemSach_Click(object sender, EventArgs e)
         {
 
