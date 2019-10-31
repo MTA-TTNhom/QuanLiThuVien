@@ -33,7 +33,7 @@ namespace QuanLyThuVienHVKTQS
             var s = new SachController();
             l = s.Detail();
             lvSach.Items.Clear();
-
+            
             var i = 1;
 
             var nxb = new NhaXuatBanController();
@@ -164,9 +164,9 @@ namespace QuanLyThuVienHVKTQS
                 entity.ngonngu = txtNgonNgu.Text;
                 entity.theloai = txtTheLoai.Text;
                 var s = new SachController();
-                int t = s.Add(entity);
-                if (t > 0)
-                    HienThiSach();
+                int t=s.Add(entity);
+                if(t>0)
+                HienThiSach();
             }
             if (Them_bool == false && Sua_bool == true)
             {
@@ -198,7 +198,7 @@ namespace QuanLyThuVienHVKTQS
 
         private void btnXoaSach_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("ban co thuc su muon xoa?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            DialogResult result=MessageBox.Show("ban co thuc su muon xoa?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
             if (result == DialogResult.Yes)
             {
                 int masach = Convert.ToInt32(txtMaSach.Text);
@@ -242,6 +242,4 @@ namespace QuanLyThuVienHVKTQS
 
         }
     }
-}
-
 }

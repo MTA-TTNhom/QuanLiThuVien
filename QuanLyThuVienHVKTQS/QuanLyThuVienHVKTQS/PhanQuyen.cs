@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace QuanLyThuVienHVKTQS
 {
-     public static class PhanQuyen
+    public static class PhanQuyen
     {
-        public static class quyen = -1; 
-
+        public static int quyen=-1;
     }
 }

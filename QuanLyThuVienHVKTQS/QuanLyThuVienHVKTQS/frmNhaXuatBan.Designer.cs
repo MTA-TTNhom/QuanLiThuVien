@@ -100,46 +100,41 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 31);
+            this.label1.Location = new System.Drawing.Point(17, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 16);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã NXB";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(20, 71);
+            this.label2.Location = new System.Drawing.Point(17, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 16);
+            this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên NXB";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 109);
+            this.label3.Location = new System.Drawing.Point(17, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 16);
+            this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Địa chỉ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 148);
+            this.label4.Location = new System.Drawing.Point(6, 144);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 16);
+            this.label4.Size = new System.Drawing.Size(70, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Số điện thoại";
             // 
             // group_NXB
             // 
-            this.group_NXB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.group_NXB.Controls.Add(this.sdtnxbtxt);
             this.group_NXB.Controls.Add(this.diachinxbtxt);
             this.group_NXB.Controls.Add(this.tennxbtxt);
@@ -156,42 +151,40 @@
             // 
             // sdtnxbtxt
             // 
-            this.sdtnxbtxt.Location = new System.Drawing.Point(146, 146);
+            this.sdtnxbtxt.Location = new System.Drawing.Point(92, 141);
             this.sdtnxbtxt.Name = "sdtnxbtxt";
-            this.sdtnxbtxt.Size = new System.Drawing.Size(141, 20);
+            this.sdtnxbtxt.Size = new System.Drawing.Size(100, 20);
             this.sdtnxbtxt.TabIndex = 8;
             // 
             // diachinxbtxt
             // 
-            this.diachinxbtxt.Location = new System.Drawing.Point(146, 107);
+            this.diachinxbtxt.Location = new System.Drawing.Point(92, 102);
             this.diachinxbtxt.Name = "diachinxbtxt";
-            this.diachinxbtxt.Size = new System.Drawing.Size(141, 20);
+            this.diachinxbtxt.Size = new System.Drawing.Size(100, 20);
             this.diachinxbtxt.TabIndex = 7;
             // 
             // tennxbtxt
             // 
-            this.tennxbtxt.Location = new System.Drawing.Point(146, 69);
+            this.tennxbtxt.Location = new System.Drawing.Point(92, 64);
             this.tennxbtxt.Name = "tennxbtxt";
-            this.tennxbtxt.Size = new System.Drawing.Size(141, 20);
+            this.tennxbtxt.Size = new System.Drawing.Size(100, 20);
             this.tennxbtxt.TabIndex = 6;
             // 
             // manxbtxt
             // 
-            this.manxbtxt.Location = new System.Drawing.Point(146, 29);
+            this.manxbtxt.Location = new System.Drawing.Point(92, 24);
             this.manxbtxt.Name = "manxbtxt";
-            this.manxbtxt.Size = new System.Drawing.Size(141, 20);
+            this.manxbtxt.Size = new System.Drawing.Size(100, 20);
             this.manxbtxt.TabIndex = 5;
             // 
             // groupnxb_btn
             // 
-            this.groupnxb_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.groupnxb_btn.Controls.Add(this.Thoat_NXB);
             this.groupnxb_btn.Controls.Add(this.Boqua_NXB);
             this.groupnxb_btn.Controls.Add(this.Luu_NXB);
             this.groupnxb_btn.Controls.Add(this.Xoa_NXB);
             this.groupnxb_btn.Controls.Add(this.Sua_NXB);
             this.groupnxb_btn.Controls.Add(this.Them_NXB);
-            this.groupnxb_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.groupnxb_btn.Location = new System.Drawing.Point(381, 250);
             this.groupnxb_btn.Name = "groupnxb_btn";
             this.groupnxb_btn.Size = new System.Drawing.Size(309, 114);
@@ -200,74 +193,62 @@
             // 
             // Thoat_NXB
             // 
-            this.Thoat_NXB.BackColor = System.Drawing.Color.Red;
-            this.Thoat_NXB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thoat_NXB.Location = new System.Drawing.Point(212, 72);
             this.Thoat_NXB.Name = "Thoat_NXB";
             this.Thoat_NXB.Size = new System.Drawing.Size(75, 23);
             this.Thoat_NXB.TabIndex = 5;
             this.Thoat_NXB.Text = "Thoát";
-            this.Thoat_NXB.UseVisualStyleBackColor = false;
+            this.Thoat_NXB.UseVisualStyleBackColor = true;
             this.Thoat_NXB.Click += new System.EventHandler(this.Thoat_NXB_Click);
             // 
             // Boqua_NXB
             // 
-            this.Boqua_NXB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Boqua_NXB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Boqua_NXB.Location = new System.Drawing.Point(110, 72);
+            this.Boqua_NXB.Location = new System.Drawing.Point(106, 72);
             this.Boqua_NXB.Name = "Boqua_NXB";
             this.Boqua_NXB.Size = new System.Drawing.Size(75, 23);
             this.Boqua_NXB.TabIndex = 4;
             this.Boqua_NXB.Text = "Bỏ qua";
-            this.Boqua_NXB.UseVisualStyleBackColor = false;
+            this.Boqua_NXB.UseVisualStyleBackColor = true;
             this.Boqua_NXB.Click += new System.EventHandler(this.Boqua_NXB_Click);
             // 
             // Luu_NXB
             // 
-            this.Luu_NXB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Luu_NXB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Luu_NXB.Location = new System.Drawing.Point(6, 72);
             this.Luu_NXB.Name = "Luu_NXB";
             this.Luu_NXB.Size = new System.Drawing.Size(75, 23);
             this.Luu_NXB.TabIndex = 3;
             this.Luu_NXB.Text = "Lưu";
-            this.Luu_NXB.UseVisualStyleBackColor = false;
+            this.Luu_NXB.UseVisualStyleBackColor = true;
             this.Luu_NXB.Click += new System.EventHandler(this.Luu_NXB_Click);
             // 
             // Xoa_NXB
             // 
-            this.Xoa_NXB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Xoa_NXB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Xoa_NXB.Location = new System.Drawing.Point(212, 19);
             this.Xoa_NXB.Name = "Xoa_NXB";
             this.Xoa_NXB.Size = new System.Drawing.Size(75, 23);
             this.Xoa_NXB.TabIndex = 2;
             this.Xoa_NXB.Text = "Xóa";
-            this.Xoa_NXB.UseVisualStyleBackColor = false;
+            this.Xoa_NXB.UseVisualStyleBackColor = true;
             this.Xoa_NXB.Click += new System.EventHandler(this.Xoa_NXB_Click);
             // 
             // Sua_NXB
             // 
-            this.Sua_NXB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Sua_NXB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sua_NXB.Location = new System.Drawing.Point(110, 19);
+            this.Sua_NXB.Location = new System.Drawing.Point(106, 19);
             this.Sua_NXB.Name = "Sua_NXB";
             this.Sua_NXB.Size = new System.Drawing.Size(75, 23);
             this.Sua_NXB.TabIndex = 1;
             this.Sua_NXB.Text = "Sửa";
-            this.Sua_NXB.UseVisualStyleBackColor = false;
+            this.Sua_NXB.UseVisualStyleBackColor = true;
             this.Sua_NXB.Click += new System.EventHandler(this.Sua_NXB_Click);
             // 
             // Them_NXB
             // 
-            this.Them_NXB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Them_NXB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Them_NXB.Location = new System.Drawing.Point(6, 19);
             this.Them_NXB.Name = "Them_NXB";
             this.Them_NXB.Size = new System.Drawing.Size(75, 23);
             this.Them_NXB.TabIndex = 0;
             this.Them_NXB.Text = "Thêm";
-            this.Them_NXB.UseVisualStyleBackColor = false;
+            this.Them_NXB.UseVisualStyleBackColor = true;
             this.Them_NXB.Click += new System.EventHandler(this.Them_NXB_Click);
             // 
             // frmNhaXuatBan

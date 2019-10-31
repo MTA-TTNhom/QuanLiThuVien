@@ -16,22 +16,16 @@ namespace QuanLyThuVienHVKTQS.controller
         }
         public List<nhaxuatban> Detail()
         {
-            var lstnhaxb = db.nhaxuatbans.ToList();
-            return lstnxb;
+            var list = db.nhaxuatbans.ToList();
+            return list;
         }
         public int Add(nhaxuatban entity)
         {
             try
             {
-                var nsx = db.db.nhaxuatbans.Where(m => m.manxb == entity.manxb);
-                if (nsx != null)
-                {
-                    db.nhaxuatbans.InsertOnSubmit(entity);
-                    db.SubmitChanges();
-                    return entity.manxb;
-                }
-                return 0;
-                
+                db.nhaxuatbans.InsertOnSubmit(entity);
+                db.SubmitChanges();
+                return entity.manxb;
             }
             catch (Exception)
             {
@@ -44,16 +38,10 @@ namespace QuanLyThuVienHVKTQS.controller
         {
             try
             {
-                var nsx = db.db.nhaxuatbans.Where(m => m.manxb == id);
-                if (nsx != null)
-                {
-                    var obj = db.nhaxuatbans.First(m => m.manxb == id);
-                    db.nhaxuatbans.DeleteOnSubmit(obj);
-                    db.SubmitChanges();
-                    return true;
-                }
-                return false;
-                
+                var obj = db.nhaxuatbans.First(m => m.manxb == id);
+                db.nhaxuatbans.DeleteOnSubmit(obj);
+                db.SubmitChanges();
+                return true;
             }
             catch(Exception)
             {
@@ -65,7 +53,7 @@ namespace QuanLyThuVienHVKTQS.controller
 
         public bool Edit(nhaxuatban nxb)
         {
-            var obj = db.nhaxuatbans.Where(m => m.manxb == nxb.manxb);
+            var obj = db.nhaxuatbans.First(m => m.manxb == nxb.manxb);
             if (obj != null)
             {
                 try

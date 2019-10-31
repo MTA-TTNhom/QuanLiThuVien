@@ -22,16 +22,9 @@ namespace QuanLyThuVienHVKTQS.controller
         {
             try
             {
-                var ss = db.saches..Where(m => m.masach == entity.masach);
-                if (ss == null)
-                {
-                    db.saches.InsertOnSubmit(entity);
-                    db.SubmitChanges();
-                    return entity.masach;
-
-                }
-                return null;
-                
+                db.saches.InsertOnSubmit(entity);
+                db.SubmitChanges();
+                return entity.masach;
             }
             catch (Exception)
             {
@@ -69,14 +62,9 @@ namespace QuanLyThuVienHVKTQS.controller
         {
             try
             {
-                var ss = db.saches..Where(m => m.masach == entity.masach);
-                if (ss != null)
-                {
-                    var result = db.saches.First(m => m.masach == masach);
-                    db.saches.DeleteOnSubmit(result);
-                    db.SubmitChanges();
-                }
-                return false;
+                var result = db.saches.First(m => m.masach == masach);
+                db.saches.DeleteOnSubmit(result);
+                db.SubmitChanges();
             }
             catch (Exception)
             {

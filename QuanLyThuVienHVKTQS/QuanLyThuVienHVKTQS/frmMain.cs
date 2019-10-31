@@ -79,7 +79,11 @@ namespace QuanLyThuVienHVKTQS
             frmTTMuonSach ms = new frmTTMuonSach();
             ms.ShowDialog();
         }
-       
+        private void Show_User()
+        {
+            frmUser user = new frmUser();
+            user.ShowDialog();
+        }
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
 
@@ -128,7 +132,13 @@ namespace QuanLyThuVienHVKTQS
 
         
 
-        
+        private void đăngXuâtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            usernametxt.Text = "";
+            passwordtxt.Text = "";
+            PhanQuyen.quyen = -1;
+            Load_Main();
+        }
         //Đăng ký
         private void dangkybtn_Click(object sender, EventArgs e)
         {
@@ -165,7 +175,24 @@ namespace QuanLyThuVienHVKTQS
         {
             Show_NV();
         }
-        
+        private void quảnLýMượntrảSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Show_MS();
+        }
+
+        private void quanlynguoidung_toolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Show_User();
+        }
+        private void danhMucNhaXuâtBanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Show_NXB();
+        }
+
+        private void quanLiSachToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Show_Sach();
+        }
 
 
     }

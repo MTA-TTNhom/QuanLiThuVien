@@ -14,7 +14,7 @@ namespace QuanLyThuVienHVKTQS
 {
     public partial class frmNhanVien : Form
     {
-        List<nhanvien> l = null;
+        List<nhanvien> l =null;
         private bool Them_bool = false;
         private bool Sua_bool = false;
         public frmNhanVien()
@@ -76,7 +76,7 @@ namespace QuanLyThuVienHVKTQS
             }
 
         }
-
+       
 
         private void ListView_NV_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -128,7 +128,7 @@ namespace QuanLyThuVienHVKTQS
         private void XoaNV_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có muốn xóa nhân viên này?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if (result == DialogResult.Yes)
+            if(result==DialogResult.Yes)
             {
                 int id = Convert.ToInt32(manvtxt.Text);
                 var entity = new NhanVienController();
